@@ -10,5 +10,5 @@ if (!supportsCssVars()) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  
 });

@@ -13,6 +13,8 @@ const webpackConfig = {
     app: [
       `${__uiRoot}/index.entry.js`
     ],
+    
+    "landing": `${__uiRoot}/landing/index.js`
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -86,18 +88,21 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       title: 'Main app',
       template: './app/pages/index.html',
+      chunks: ['app']
     }),
 
     new HtmlWebpackPlugin({
       title: 'Main app',
       template: './app/pages/landing.html',
       filename: 'landing.html',
+      chunks: ['landing']
     }),
 
     new HtmlWebpackPlugin({
       title: 'Layout docs',
       template: './app/pages/layout-docs.html',
       filename: 'layout-docs.html',
+      chungs: ['app']
     }),
 
   ],

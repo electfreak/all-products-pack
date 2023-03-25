@@ -25,7 +25,9 @@ module.exports = function(api) {
 
       require('@babel/plugin-transform-async-to-generator'),
 
-      require('@babel/plugin-transform-react-jsx'),
+     [require('@babel/plugin-transform-react-jsx'), {
+      "runtime": "automatic"
+     }],
 
       [
         require('@babel/plugin-transform-runtime'),
