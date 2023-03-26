@@ -1,7 +1,8 @@
+import "./main.pcss"
+
 export default function Main() {
   return (
-    <main>
-      
+    <main className="main">
     </main>
   );
 }
