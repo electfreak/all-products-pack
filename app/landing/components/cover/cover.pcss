@@ -1,0 +1,119 @@
+.cover {
+  &__banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__header-1 {
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
+
+  &__header-2 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__header-3 {
+    font-size: 31px;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    background-color: var(--orange);
+    color: white;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__product-tech {
+    background-color: rgba(39, 40, 44, 0.05);
+    color: rgba(39, 40, 44, 0.7);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 15px;
+  }
+
+  @media (--sm) {
+    &__banner {
+      padding-top: 60px;
+    }
+
+    &__header-1 {
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+
+    &__header-2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    &__btn {
+      margin-bottom: 16px;
+    }
+
+    &__text-1 {
+      margin-bottom: 60px;
+    }
+
+    &__text-2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.desktop-products {
+  &__logo-item {
+    margin-bottom: 65px;
+  }
+
+  &__product-item {
+    margin-bottom: 25px;
+  }
+
+  &__product-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media (--sm) {
+    display: none;
+  }
+}
+
+.mobile-products {
+  display: none;
+
+  &__logo-item {
+    margin-bottom: 12px;
+  }
+
+  &__product-name {
+    margin-bottom: 10px;
+  }
+
+  &__product-item {
+    margin-bottom: 25px;
+  }
+
+  @media (--sm) {
+    display: block;
+  }
+}
