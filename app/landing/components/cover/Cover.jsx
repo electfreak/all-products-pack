@@ -10,6 +10,8 @@ import {
   AppcodeLogo,
   DatagripLogo,
   PhpstormLogo,
+  ClionLogo,
+  PycharmLogo,
 } from "@jetbrains/logos/react";
 
 const ides = [
@@ -51,7 +53,7 @@ const ides = [
   {
     name: "CLion",
     stack: ["Ruby"],
-    icon: AppcodeLogo,
+    icon: ClionLogo,
   },
   {
     name: "PhpStorm",
@@ -61,7 +63,7 @@ const ides = [
   {
     name: "PyCharm",
     stack: ["mysql", "database"],
-    icon: PhpstormLogo,
+    icon: PycharmLogo,
   },
 ];
 
