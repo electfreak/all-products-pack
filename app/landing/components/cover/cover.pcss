@@ -82,15 +82,28 @@
 .desktop-products {
   &__logo-item {
     margin-bottom: 65px;
+    transition: .3s;
+
+    &_lighted {
+      opacity: .5;
+    }
   }
 
   &__product-item {
     margin-bottom: 25px;
+    cursor: pointer;
+
+    &:hover {
+      .desktop-products__product-name {
+        color: var(--orange);
+      }
+    }
   }
 
   &__product-name {
     font-size: 20px;
     margin-bottom: 10px;
+    transition: .3s;
   }
 
   @media (--sm) {
