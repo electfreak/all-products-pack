@@ -46,14 +46,12 @@ const mobileMenu = (
 
 const overlay = <div className="overlay"></div>;
 
-export default function Header() {
+function MobileMenu() {
   let [mobileMenuOpened, setMobileMenuOpened] = useState(false);
   const toggleMenu = () => setMobileMenuOpened(!mobileMenuOpened);
 
   return (
     <>
-      {desktopHeader}
-
       <header className="header-mobile">
         <div className="wt-container">
           <div className="wr-row">
@@ -79,6 +77,15 @@ export default function Header() {
         {mobileMenuOpened && mobileMenu}
       </header>
       {mobileMenuOpened && overlay}
+    </>
+  );
+}
+
+export default function Header() {
+  return (
+    <>
+      {desktopHeader}
+      <MobileMenu />
     </>
   );
 }

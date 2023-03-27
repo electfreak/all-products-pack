@@ -663,6 +663,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@jetbrains/logos@^2.2.13":
+  version "2.2.13"
+  resolved "https://registry.yarnpkg.com/@jetbrains/logos/-/logos-2.2.13.tgz#bfd24aa56f8e787e92a6b11d14b4a8a79bbc1197"
+  integrity sha512-++RNRLXpBeyduP7rg0hiA2ZfHGRfkEoPpPY7Ttv0ZiOp+jkpadhSHmXHxmFEEJ55BET0OF4pLDPkOr0xJJfmGg==
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz"
