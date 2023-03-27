@@ -1,4 +1,5 @@
 import "./cover.pcss";
+import { useState } from "react";
 import img from "../../img/img-1@2x.jpg";
 import {
   IntellijIdeaLogo,
@@ -65,6 +66,8 @@ const ides = [
 ];
 
 function DesktopIdes() {
+  const [hoveredProduct, setHoveredProduct] = useState(null);
+
   return (
     <div className="products desktop-products">
       <div className="wt-container">
@@ -76,7 +79,9 @@ function DesktopIdes() {
                 return (
                   <div
                     key={ide.name}
-                    className="wt-col-3 wt-col-lg-4 wt-col-sm-6 desktop-products__logo-item"
+                    className={
+                      `wt-col-3 wt-col-lg-4 wt-col-sm-6 desktop-products__logo-item ${(hoveredProduct && hoveredProduct != ide.name) ? "desktop-products__logo-item_lighted" : ""}`
+                    }
                   >
                     <Icon width="65" />
                   </div>
@@ -88,9 +93,12 @@ function DesktopIdes() {
             <div className="wt-row">
               {ides.map((ide) => {
                 return (
-                  <div
+                  <a
                     className="wt-col-6 desktop-products__product-item"
                     key={ide.name}
+                    onMouseEnter={() => setHoveredProduct(ide.name)}
+                    onMouseLeave={() => setHoveredProduct(null)}
+                    href='/'
                   >
                     <div className="desktop-products__product-name">
                       {ide.name}
@@ -107,7 +115,7 @@ function DesktopIdes() {
                         );
                       })}
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
@@ -127,7 +135,10 @@ function MobileIdes() {
             const Icon = ide.icon;
 
             return (
-              <div className="wt-col-6 mobile-products__product-item" key={ide.name}>
+              <div
+                className="wt-col-6 mobile-products__product-item"
+                key={ide.name}
+              >
                 <div className="mobile-products__logo-item">
                   <Icon width="65" />
                 </div>
