@@ -4,3 +4,4 @@ build
 *.log
 _assets
 node_modules
+.DS_Store
