@@ -1,0 +1,32 @@
+.infographics {
+  padding-bottom: 96px;
+
+  &__header-2 {
+    font-size: 31px;
+    margin-bottom: 48px;
+  }
+
+  &__link {
+    color: var(--orange);
+    font-size: 18px;
+
+    padding-left: 36px;
+    background-image: url("../../img/download.svg");
+    background-position: left center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+  }
+
+  @media (--sm) {
+    padding-bottom: 62px;
+
+    &__img {
+      display: none;
+    }
+
+    &__header-2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+}

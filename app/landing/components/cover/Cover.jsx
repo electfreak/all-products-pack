@@ -112,7 +112,7 @@ export default function Cover() {
             <h2 className="cover__header-2">
               The complete full-stack <br /> developer toolkit
             </h2>
-            <a href="/" className="cover__btn">
+            <a href="/" className="cover__btn primary-button">
               I Want it All
             </a>
             <span className="light-grey-text cover__text-1">

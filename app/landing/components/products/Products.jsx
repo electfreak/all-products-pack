@@ -73,7 +73,8 @@ function MobileProducts({ prods }) {
             const Icon = ide.icon;
 
             return (
-              <div
+              <a
+                href="/"
                 className="wt-col-6 mobile-products__product-item"
                 key={ide.name}
               >
@@ -93,7 +94,7 @@ function MobileProducts({ prods }) {
                     );
                   })}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

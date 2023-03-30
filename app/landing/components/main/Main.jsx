@@ -4,6 +4,8 @@ import Advantages from "../advantages/Advantages";
 import ToolboxApp from "../toolboxApp/ToolboxApp";
 import Partners from "../partners/Partners";
 import Faq from "../faq/Faq";
+import Infographics from "../infographics/Infographics";
+import Social from "../social/Social";
 
 export default function Main() {
   return (
@@ -13,6 +15,8 @@ export default function Main() {
       <ToolboxApp />
       <Partners />
       <Faq />
+      <Infographics />
+      <Social />
     </main>
   );
 }
