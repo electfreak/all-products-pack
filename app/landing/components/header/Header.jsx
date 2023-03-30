@@ -48,7 +48,14 @@ const overlay = <div className="overlay"></div>;
 
 function MobileMenu() {
   let [mobileMenuOpened, setMobileMenuOpened] = useState(false);
-  const toggleMenu = () => setMobileMenuOpened(!mobileMenuOpened);
+  const toggleMenu = () => {
+    if (mobileMenuOpened)
+      document.body.style.overflow = "";
+    else
+      document.body.style.overflow = "hidden";
+
+    setMobileMenuOpened(!mobileMenuOpened);
+  };
 
   return (
     <>
