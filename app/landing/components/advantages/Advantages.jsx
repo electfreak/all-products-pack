@@ -7,7 +7,7 @@ import useAcc from "../../img/use-account.svg"
 
 export default function Advantages() {
   return (
-    <div className="advantages">
+    <section className="advantages">
       <div className="wt-container">
         <div className="wt-row wt-row_size_0 wt-row-lg_size_l">
           <div className="wt-col-6 advantages__img">
@@ -31,7 +31,7 @@ export default function Advantages() {
               </div>
             </div>
             <div className="advantages__advantage-item">
-              <img className="advantages__advantage-icon" src={learn}></img>
+            <img className="advantages__advantage-icon" src={useAcc}></img>
               <h4 className="advantages__head-4">Simple license management</h4>
               <div className="light-grey-text advantages__text">
                 One unique license includes all the JetBrains desktop tools. Get
@@ -39,7 +39,7 @@ export default function Advantages() {
               </div>
             </div>
             <div className="advantages__advantage-item">
-              <img className="advantages__advantage-icon" src={useAcc}></img>
+            <img className="advantages__advantage-icon" src={learn}></img>
               <h4 className="advantages__head-4">Further your skills</h4>
               <div className="light-grey-text advantages__text">
                 Advance your programming skills with the best professional
@@ -49,6 +49,6 @@ export default function Advantages() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
