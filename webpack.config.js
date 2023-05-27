@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const __uiRoot = path.resolve(__dirname, './app');
 
 const isProduction = process.env.NODE_ENV === 'production';
+const publicPath = process.env.publicPath ?? '/';
 
 const webpackConfig = {
   entry: {
@@ -18,7 +19,7 @@ const webpackConfig = {
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/'
+    publicPath,
   },
 
   mode: isProduction ? 'production' : 'development',
